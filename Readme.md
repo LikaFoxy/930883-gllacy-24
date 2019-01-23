@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анжелика Кузьминская](https://up.htmlacademy.ru/htmlcss/24/user/930883).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
