@@ -3,24 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <a><img class="main-heder-logo" src="img/index-logo.svg" width="" height="" alt="Логотип магазина"></a>
+      <img class="main-heder-logo" src="img/logo.svg" width="154px" height="64px" alt="Глейси">
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="price.html">Доставка и оплата</a></li>
-          <li><a href="company.html">О компании</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search"><a href="#"></a></li>
-          <li class="login-link"><a href="#">Вход</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li class="search">
+            <button class="magnifier">
+            <a href="#"><img class="magnifier" src="img/loupe.svg" width="17px" height="17px" alt="Поиск"></a>
+            </button>
+             <form class="header-button-search-form" action="#" method="post"> <input type="search" name="search" placeholder="Что ищем?"></form>
+          </li>
+          <li class="login-link">
+            <button class="header-button-input">
+            <a href="#"><img class="entry" src="img/entrance.svg" width="21px" height="19px" alt="Вход">Вход</a>
+            </button>
+            <form class="header-input-form" action="#" method="post">
+							<p><input type="text" name="name" placeholder="Электронная почта"></p>
+							<p><input type="text" name="passead" placeholder="Пароль"></p>
+							<button class="form-button-input" type="submit">Войти</button>
+							<div class="blok-1">
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</div>
+						</form>
+          </li>
+          <li class="basket">
+            <button class="header-button-basket">
+            <a href="#"><img class="basket" src="img/basket.svg" width="21px" height="20px" alt="Корзина">Пусто</a></button>
+           </li>
         </ul>
       </nav>
     </header>
     <main class="conteiner">
+        <div class="main-timework">
+            <p class="timework-time">с 10 до 20,ежедневно</p>
+            <p class="timework-tell">8 812 450-25-25</p>
+          </div>
+          <div class="wrapper-sliader">
+            <section class="slider">
+              <div class="slider-controls">
+                <label for="product-1">Первый</label>
+                <label for="product-2">Второй</label>
+                <label for="product-3">Третий</label>
+              </div>
+              <ul class="slider-list">
+                <li class="slider-item slide" id="slide1">
+                  <h3 class="slide-title">
+                  Крем-брюле и пломбир с малиновым джемом
+                  </h3>
+                  <a class="button slide-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide" id="slide2">
+                  <h3 class="slide-title">
+                  Шоколадный пломбир и лимонный сорбет
+                  </h3>
+                  <a class="button slide-button" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider-item slide" id="slide3">
+                  <h3 class="slide-title">
+                  Пломбир с помадкой и клубничный щербет
+                  </h3>
+                  <a class="button slide-button" href="#">Давайте оба!</a>
+                </li>
+              </ul>
+            </section>
+          </div>
       <section class="action">
         <h2 class="action-head">Малинка даром!</h2>
         <p class="action-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -58,7 +115,7 @@
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>415P<span>/кг</span></strong>
-            <a href="#"><h1>Сливочное крем-брюле с карамельной подливкой</h1></a>
+            <h1><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h1>
             </article>
           </li>
         </ul>
@@ -115,8 +172,8 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          Сделано в HTML Academy © 2019</a>
         </div>
       </footer>
     </main>

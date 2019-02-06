@@ -2,20 +2,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог Глэйси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header class="main-header">
-      <a class="main header-logo" href="index.html"><img class="main-heder-logo" src="img/index-logo.svg" width="" height="" alt="Логотип магазина"></a>
+      <a class="main header-logo" href="index.html"><img class="main-heder-logo" src="img/logo.svg" width="154px" height="64px" alt="Глейси"></a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a class="button" href="catalog.html">Каталог</a></li>
-          <li><a href="price.html">Доставка и оплата</a></li>
-          <li><a href="company.html">О компании</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search"></li>
-          <li class="login-link">Вход</li>
-          <li class="button-basket-catalog">2 товара</li>
+          <li class="search">
+            <button class="magnifier">
+            <a href="#"><img class="magnifier" src="img/loupe.svg" width="17px" height="17px" alt="Поиск"></a>
+            </button>
+            <form class="header-button-search-form" action="#" method="post"> <input type="search" name="search" placeholder="Что ищем?"></form>
+          </li>
+          <li class="login-link">
+            <button class="header-button-input">
+            <a href="#"><img class="entry" src="img/entrance.svg" width="21px" height="19px" alt="Вход">Вход</a>
+            </button>
+            <form class="header-input-form" action="#" method="post">
+							<p><input type="text" name="name" placeholder="Электронная почта"></p>
+							<p><input type="text" name="passead" placeholder="Пароль"></p>
+							<button class="form-button-input" type="submit">Войти</button>
+							<div class="blok-1">
+								<a href="#">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</div>
+						</form>
+          </li>
+          <li class="form-basket">
+						<button class="button-basket-catalog">2 товара</button>
+						<form class="header-form-catalog" action="#" method="post">
+							<ul>
+								<li class="header-form-catalog-basket-1">
+									<button class="detele">Удалить</button>
+									<img src="img/plombir-orange.jpg" width="33" height="33" alt="Пломбир с апелсиновым джемом">
+									<p class="label">Пломбир с апелсиновым джемом</p>
+									<p class="weight">1,5 кг х<span class="price">200руб</span></p>
+									<p class="weight-3">300 руб</p>
+								</li>
+								<li class="header-form-catalog-basket-2">
+									<button class="detele">Удалить</button>
+									<img src="img/plombir-strawberry.jpg"  width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада">
+									<p class="label">Клубничный пломбир с присыпкой из белого шоколада</p>
+									<p class="weight">1,5 кг х<span class="price">300руб</span></p>
+									<p class="weight-4">450 руб</p>
+								</li>
+							</ul>
+							<div class="wrapperform">
+								<p>Итого 750 руб</p>
+								<button class="form-header-catalog-button" type="submit">Оформить заказ</button>
+							</div>
+						</form>
+					</li>
         </ul>
       </nav>
     </header>
@@ -34,84 +79,84 @@
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>310Р</strong><span>/кг</span>
-            <p><u>Сливочное с апельсиновым джемом и цитрусовой стружкой</u></p>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </article>
            </li>
             <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>380Р</strong><span>/кг</span>
-            <p><u>Сливочно-кофейное с кусочками шоколада</u></p>
+            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
             </article>
            </li>
             <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>355Р</strong><span>/кг</span>
-            <p><u>Сливочно-клубничное с присыпкой из белого шоколада</u></p>
+            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </article>
            </li>
             <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>415Р</strong><span>/кг</span>
-            <p><u>Сливочное крем-брюле с карамельной подливкой</u></p>
+            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </article>
            </li>
            <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>325Р</strong><span>/кг</span>
-            <p><u>Сливочное с брусничным джемом</u></p>
+            <a href="#">Сливочное с брусничным джемом</a>
             </article>
            </li>
            <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>410Р</strong><span>/кг</span>
-            <p><u>Сливочно-черничное с цельными ягодами черники </u></p>
+            <a href="#">Сливочно-черничное с цельными ягодами черники </a>
             </article>
            </li>
             <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>375Р</strong><span>/кг</span>
-            <p><u>Сливочно-лимонное с карамельной присыпкой</u></p>
+            <h1><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h1>
             </article>
            </li>
             <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>320Р</strong><span>/кг</span>
-            <p><u>Сливочное с шоколадной стружкой</u></p>
+            <a href="#">Сливочное с шоколадной стружкой</a>
             </article>
             </li>
            <li class="ice-cream-item">
              <article class="ice-cream-box">
              <img src="http://placehold.it/150x100">
              <strong>440Р</strong><span>/кг</span>
-             <p><u>Сливочно-ванильное с кусочками шоколада</u></p>
+             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
             </article>
             </li>
             <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>435Р</strong><span>/кг</span>
-            <p><u>Сливочноe с ментоловым сиропом</u></p>
+            <a href="#">Сливочноe с ментоловым сиропом</a>
             </article>
             </li>
            <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>355Р</strong><span>/кг</span>
-            <p><u>Сливочное с кусочками черного шоколада</u></p>
+            <a href="#">Сливочное с кусочками черного шоколада</a>
             </article>
             </li>
            <li class="ice-cream-item">
             <article class="ice-cream-box">
             <img src="http://placehold.it/150x100">
             <strong>420Р</strong><span>/кг</span>
-            <p><u>Сливочное с мятным сиропом</u></p>
+            <a href="#">Сливочное с мятным сиропом</a>
             </article>
           </li>
          </ul>
@@ -144,8 +189,8 @@
           </ul>
         </div>
         <div class="footer-copyright">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          Сделано в HTML Academy © 2019</a>
         </div>
       </footer>
     </main>
