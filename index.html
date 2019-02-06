@@ -5,11 +5,10 @@
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <img class="main-heder-logo" src="img/logo.svg" width="154" height="64" alt="Глейси">
+      <a><img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Глейси"></a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a></li>
@@ -18,20 +17,16 @@
         </ul>
         <ul class="user-navigation">
           <li class="search">
-            <button class="magnifier">
             <a href="#"><img class="magnifier" src="img/loupe.svg" width="17" height="17" alt="Поиск"></a>
-            </button>
-            <form class="header-button-search-form" action="#" method="post"> <input type="search" name="search" placeholder="Что ищем?"></form>
+            <form class="header-button-search-form" action="https://echo.htmlacademy.ru" method="post"> <input type="search" name="search" placeholder="Что ищем?"></form>
           </li>
           <li class="login-link">
-            <button class="header-button-input">
             <a href="#"><img class="entry" src="img/entrance.svg" width="21" height="19" alt="Вход">Вход</a>
-            </button>
-            <form class="header-input-form" action="#" method="post">
+            <form class="header-input-form" action="https://echo.htmlacademy.ru" method="post">
 							<p><input type="text" name="name" placeholder="Электронная почта"></p>
 							<p><input type="text" name="passead" placeholder="Пароль"></p>
 							<button class="form-button-input" type="submit">Войти</button>
-							<div class="blok-1">
+							<div class="blok-one">
 								<a href="#">Забыли пароль?</a>
 								<a href="#">Новая регистрация</a>
 							</div>
@@ -47,7 +42,7 @@
     <main class="conteiner">
         <div class="main-timework">
             <p class="timework-time">с 10 до 20,ежедневно</p>
-            <p class="timework-tell">8 812 450-25-25</p>
+            <a class="timework-tell" href="tel:88124502525">8 812 450-25-25</a>
           </div>
           <div class="wrapper-sliader">
             <section class="slider">
@@ -141,7 +136,7 @@
         <h1>Новое в нашем блоге</h1>
         <a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
-      <form class="mailing">
+      <form class="mailing" action="https://echo.htmlacademy.ru" method="post">
         <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         <input type="text" class="mailing-form">Электронная почта</input>
         <button type="submit">Отправить</button>
@@ -150,7 +145,7 @@
         <p class="address-text">Адрес главного офиса и офлайн-магазина:</p>
         <p>ул.<strong class="adres">Большая Конюшенная 19/8, Санкт-Петербург</strong><br>
         Для заказов по телефону:<br>
-        <strong>8 812 450-25-25</strong><br>
+        <a href="tel:88124502525">8 812 450-25-25</a><br>
         (с 10 до 20 ежедневно)</p>
         <a class="address-button" href="#">Форма обратной связи</a>
       </section>
