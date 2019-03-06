@@ -8,6 +8,7 @@ html{
   
   body{
     margin: 0;
+    padding: 0;
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -16,6 +17,11 @@ html{
     background-color: #849d8f;
   }
   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .list{
     list-style: none;
   }
@@ -35,24 +41,161 @@ html{
   }
   
   .main-navigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: transparent;
   }
   
+  .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+          justify-content: space-between;
+    margin-top: 9px;
+    margin-bottom: 19px;
+    position: relative;
+    z-index: 1;
+  }
+
   .main-header-logo{
     width: 154px;
     height: 64px;
     margin-right: 24px;
   }
   
-  .site-navigation{
-    width: 384px;
-    margin: 0;
-    margin-right: 319px;
-    margin-top: 20px;
-    padding: 0;
+  .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 9px;
+    margin-top: 14px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .site-navigation-current {
+    position: relative;
+    padding-bottom: 6px;
+  }
+  
+  .site-navigation-current-link {
+    display: block;
+    padding: 7px 14px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+  
+  .site-navigation-current-link-wrap {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-navigation-current-link-wrap:hover {
+    border-bottom: none;
+  }
+  
+  .site-navigation-current-link:hover,
+  .site-navigation-current-link:focus {
+    color: #333333;
+    background-color: #f7f6f3;
+    font-weight: 700;
+  }
+  
+  .site-navigation-current-link:active {
+    color: #323232;
+    -webkit-box-shadow: inset 0px 2px 1px 0 #696969;
+            box-shadow: inset 0px 2px 1px 0 #696969;
+    background-color: #ededed;
+  }
+  
+  .catalog-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 38px;
+    left: -7px;
+    list-style: none;
+    -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    width: 143px;
+    background-color: #f8f7f4;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .site-navigation-current:hover .site-navigation-current-link {
+    color: #333333;
+    background-color: #f7f6f3;
+    font-weight: 700;
+  }
+  
+  .site-navigation-current:hover .catalog-menu {
+    display: block;
+  }
+  
+  .site-navigation-link {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 15px;
+    color: #323232;
+    text-decoration: none;
+  }
+  
+  li:last-child .site-navigation-link {
+    padding-bottom: 15px;
+  }
+  
+  .site-navigation-list::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 6px;
+    width: 128px;
+    height: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .site-navigation-list .site-navigation-link {
+    padding-bottom: 14px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  
+  .site-navigation-link:hover,
+  .site-navigation-link:focus {
+    background-color: #fbded7;
+  }
+  
+  .site-navigation-link:active {
+    background-color: #f6b5a5;
+  }
+  
+  .site-navigation-current {
+    background-color: #d07058;
+  }
+  
+  .site-navigation-current .site-navigation-current-link-wrap {
+    border-bottom: none;
   }
   
   .user-navigation{
@@ -433,7 +576,7 @@ html{
   
   
   
-  .catalog-menu,
+  
   .slider,
   .search-form,
   .login-form,
