@@ -188,11 +188,11 @@
   .site-navigation-current {
     background-color: #d07058;
 
-  }*/
+  }
 
   .site-navigation-current .site-navigation-current-link-wrap {
     border-bottom: none;
-  }
+  }*/
 
   .header-addition {
     padding-top: 13px;
@@ -1473,14 +1473,4 @@
 
 .modal-show {
   display: block;
-}
-
-
-.catalog-menu,
-.slider,
-.search-form,
-.login-form,
-.feedback-form,
-.basket-form{
-  display: none;
 }
