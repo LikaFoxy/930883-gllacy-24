@@ -185,12 +185,13 @@
     background-color: #f6b5a5;
   }
 
-/*
-
-  .site-navigation-current-link-wrap:active {
+  .navigation-active {
     background-color: #d07058;
+  }
 
-*/
+  .navigation-active .site-navigation-current-link-wrap {
+    border-bottom: none;
+  }
 
   .header-addition {
     padding-top: 13px;
@@ -498,7 +499,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   color: #ffffff;
   border-radius: 15px;
   background-position: 0 0;
@@ -524,18 +525,19 @@
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  height: 86px;
   overflow: hidden;
 }
 
 .promo-item-malinka {
   background-color: #93163e;
   background-image: url("../img/fon-razz.png");
+  background-size: cover;
 }
 
 .promo-item-chocolate {
   background-color: #2e1002;
   background-image: url("../img/fon-chocolate.png");
+  background-size: cover;
 }
 
 .promo-list-button {
